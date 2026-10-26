@@ -49,7 +49,8 @@ void RpcProvider::Run(int nodeIndex, short port) {
   for (int i = 0; hent->h_addr_list[i]; i++) {
     ipC = inet_ntoa(*(struct in_addr *)(hent->h_addr_list[i]));  // IP地址
   }
-  std::string ip = std::string(ipC);
+  // std::string ip = std::string(ipC);
+  std::string ip = "127.0.0.1";
   //    // 获取端口
   //    if(getReleasePort(port)) //在port的基础上获取一个可用的port，不知道为何没有效果
   //    {

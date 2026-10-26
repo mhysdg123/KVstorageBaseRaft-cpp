@@ -7,3 +7,13 @@ lib
 
 *.out
 *.a
+
+# Local build artifacts, runtime data, and backups
+/build/
+/runtime/
+*.bak
+
+# Local tool configuration and credentials
+/.aws/
+/.codex/
+/.agents/
